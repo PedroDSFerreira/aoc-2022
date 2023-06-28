@@ -3,7 +3,7 @@ def main():
     with open("input.txt") as file:
         for line in file:
             if line.strip():
-                elves[-1] = elves[-1] + int(line.strip())
+                elves[-1] += int(line.strip())
             else:
                 elves.append(0)
     
